@@ -1,5 +1,5 @@
-import clean_data as cd
 from clean_data import clean_xlsx
+
 in_xlsx_path:str = r'phone_numbers.xlsx' # путь к файлу с исходными данными
 out_xlsx_path:str = r'phone_numbers_clean.xlsx' # путь к файлу для записи результата
 
