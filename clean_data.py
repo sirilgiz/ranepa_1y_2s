@@ -30,7 +30,7 @@ def remove_nondigit_char_from_str(s: str):
         return s
     return re.sub(r'\D', '', s)
 
-
+# Функция получает на вход пути к файлам и запускает обработку
 def clean_xlsx(in_xlsx_path: str, out_xlsx_path: str):
     df = get_xlsx_content(in_xlsx_path)
     df_clean = df.map(remove_nondigit_char_from_str)
